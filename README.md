@@ -1,1 +1,5 @@
-# FulmenMinis
+"(https://github.com/FulmenMinis/hello-world) "Hello World"" 
+"(https://github.com/FulmenMinis/patchwork) "Feladat"" 
+"(https://github.com/FulmenMinis/git-lesson-repository) "git-lesson-repository"" 
+"(https://github.com/greenfox-academy/FulmenMinis) "FulmenMinis"" 
+"[Badcat-Syllabus](https://github.com/greenfox-academy/badcat-syllabus) "Badcat Syllabus"" 
