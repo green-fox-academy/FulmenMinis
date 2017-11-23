@@ -1,0 +1,17 @@
+* {
+   
+}
+
+body {
+    font-size: 36px;
+    color: rgb(60, 68, 68);
+    }
+div {
+    width: 350px;
+    height: 136px;
+    background-color:rgb(32, 149, 178);
+    padding: 20px;
+    border: 6px rgb(28, 236, 184);
+    border-style: solid;
+    margin: 18px 5px;     
+    }

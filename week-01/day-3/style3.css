@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+ }
+ 
+ body {
+     
+ }
+ article {
+    margin: 3px 0 3px 3px; 
+ }
+
+ p {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    width: 350px;
+    height: 125px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: solid 17px blue;
+    background-color: rgb(226, 67, 67)
+ }
+
+article:nth-child(2) > p {
+    background-color: rgb(226, 223, 67);
+    }
