@@ -1,0 +1,18 @@
+h1 {
+    color: rgb(235, 85, 85);
+    font-weight: bold;
+}
+h2 {
+    color: rgb(170, 41, 170);
+}
+h3 {color: rgb(170, 41, 170);
+}
+ol :last-child {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+ol {
+    color: palevioletred;
+    text-decoration: underline;
+}
