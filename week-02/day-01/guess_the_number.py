@@ -5,3 +5,14 @@
 # The stored number is higher
 # The stried number is lower
 # You found the number: 8
+number = 23
+guess=0
+while number != guess:
+    guess = int(input ('What is your guess? '))
+    if number > guess:
+        print ("The stored number is higher")
+    elif number < guess:
+        print("The stored number is lower")
+    elif number == guess:
+        print ("You found the number: 23")
+        break

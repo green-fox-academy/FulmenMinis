@@ -3,5 +3,5 @@
 massInKg = 81.2
 heightInM = 1.78
 
-BMI = 'massInkg' / 'heightInM' / 'heightInM'
+BMI = massInKg / heightInM / heightInM
 print (BMI)
