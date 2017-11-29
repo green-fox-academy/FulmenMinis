@@ -12,3 +12,19 @@ students = [
 
 # create a function that takes a list of students and prints: 
 #  - how many candies they have on average
+
+def four_more():
+    name = 0
+    for i in students:
+        if i["candies"] > 4:
+            print(i['name'])
+four_more()
+
+def ave_candy():
+    candy = 0
+    for i in students:
+        candy += i["candies"]
+    print(candy / 4)
+
+ave_candy()
+
