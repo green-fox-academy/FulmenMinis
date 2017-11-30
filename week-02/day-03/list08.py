@@ -15,3 +15,20 @@
 # Waits for the user input
 # Print the result
 # Exit
+operation, A, B = input("Please type in the expression:").split()
+A = int(A)
+B = int(B)
+
+def calculator(operation):
+    if operation == '+':
+        result = A + B
+    elif operation == '-':
+        result = A - B
+    elif operation == '*':
+        result = A * B
+    elif operation == '/':
+        result = A / B
+    elif operation == '%':
+        result = A % B
+    print(result)
+calculator(operation)

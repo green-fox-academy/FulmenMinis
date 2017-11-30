@@ -11,5 +11,7 @@
 #      - Diablo
 
 todoText = " - Buy milk\n"
-todoText = 'My todo:\n' + todoText + " - Download games\n" +  "   - Diablo"
+todoText = 'My todo:\n' + todoText + " - Download games\n" + "\t - Diablo"
 print(todoText)
+
+#\t ->tab or indent in a text!

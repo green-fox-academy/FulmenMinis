@@ -15,6 +15,14 @@ hashmap = {
     11: "\n",
     3: "say goodbye"
 }
+#Solution 1
+for i in not_so_cryptic_message:
+    if i in hashmap:
+        x = hashmap.get(i)
+        out += ' ' + x 
+print(out)
+
+#Solution 2
 for i in not_so_cryptic_message:
     number_key = str(i) #str hozza össze a key-t a valueval és találja meg a kiírandó szöveget
     out = out + ' ' + hashmap[i]

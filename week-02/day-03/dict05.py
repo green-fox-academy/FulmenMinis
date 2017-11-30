@@ -1,3 +1,5 @@
+
+
 # Create a function that prints the ingredient list of dictionaries to the console in the following format:
 #
 # +--------------------+---------------+----------+
