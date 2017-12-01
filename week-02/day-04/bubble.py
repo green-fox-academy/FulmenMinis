@@ -5,36 +5,22 @@
 # Example
 # input [34, 12, 24, 9, 5]
 # output [5, 9, 12, 24, 34]
-
-desc=False
-
-def bubble(list_of_numbers):
-    for nums in range(len(list_of_numbers)-1,0,-1):
-        for i in range(nums):
-            if desc == True:
-                if list_of_numbers[i]<list_of_numbers[i+1]:
-                    temp = list_of_numbers[i]
-                    list_of_numbers[i] = list_of_numbers[i+1]
-                    list_of_numbers[i+1] = temp
-            else:
-                if list_of_numbers[i]>list_of_numbers[i+1]:
-                    temp = list_of_numbers[i]
-                    list_of_numbers[i] = list_of_numbers[i+1]
-                    list_of_numbers[i+1] = temp
-
-list_of_numbers = [34, 12, 24, 9, 5]#example numbers
-bubble(list_of_numbers)
-print(list_of_numbers)
-
-
-'''
-def reversed(list_of_numbers):
-    for nums in range(len(list_of_numbers)-1,0,-1):
-        for i in range(nums):
-            if list_of_numbers[i]<list_of_numbers[i+1]:
-                temp = list_of_numbers[i]
-                list_of_numbers[i] = list_of_numbers[i+1]
-                list_of_numbers[i+1] = temp
 list_of_numbers = [34, 12, 24, 9, 5]
-reversed(list_of_numbers)
-print(list_of_numbers)'''
+asc = False
+
+def bubble(list_of_numbers, asc):
+    for i in range(len(list_of_numbers)):
+        for j in range(len(list_of_numbers) - 1, i, -1):
+            if asc == True:
+                if list_of_numbers[j] < list_of_numbers[j - 1]:
+                    tmp = list_of_numbers[j - 1]
+                    list_of_numbers[j - 1] = list_of_numbers[j]
+                    list_of_numbers[j] = tmp
+            else:
+                if list_of_numbers[j] > list_of_numbers[j - 1]:
+                    tmp = list_of_numbers[j - 1]
+                    list_of_numbers[j - 1] = list_of_numbers[j]
+                    list_of_numbers[j] = tmp
+    return list_of_numbers
+
+print(bubble(list_of_numbers, asc))

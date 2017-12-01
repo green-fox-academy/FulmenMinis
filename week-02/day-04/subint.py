@@ -7,4 +7,12 @@
 #
 #    input: [1, 11, 34, 52, 61], 1
 #    output: [0, 1, 4]
+output_list = []
+def find_numbers(numlist, num):
+    for i in range(len(numlist)):
+        if str(num) in str(numlist[i]):
+            output_list.append(i)  
+    return output_list
+print(find_numbers([14, 114, 34, 68, 95], 4))
+
 
