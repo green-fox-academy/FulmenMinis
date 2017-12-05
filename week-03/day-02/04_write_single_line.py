@@ -9,3 +9,5 @@ try:
     my_file.close()
 except IOError:
     print("Unable to write file: my-file.txt")
+
+#írásvédett file esetén is hibaüzenet

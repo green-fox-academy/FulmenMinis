@@ -6,3 +6,16 @@
 # So if the word is "apple" and the number is 5, than it should write 5 lines
 # to the file and each line should be "apple"
 # The function should not raise any error if it could not write the file.
+def three_writer (path, word, num):
+    x = open(path, "w")
+    try:
+        for i in range(num):
+            x.write(word + '\n') if i < num-1 else x.write(word)
+    except:
+        print ('Unable to write file')
+    x.close()
+
+three_writer('apples.txt', 'apple', 5)
+
+#return '\n'.join([word] * num)
+#return ((string + '\n') * n).rstrip()
