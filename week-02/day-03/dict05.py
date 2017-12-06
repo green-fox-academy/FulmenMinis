@@ -25,3 +25,33 @@ ingredients = [
 	{ "name": "lime juice", "in_stock": 0, "needs_cooling": True },
 	{ "name": "soda", "in_stock": 0, "needs_cooling": True }
 ]
+
+def table_printer():
+
+    long = len(ingredients[0]['name'])
+
+    for i in range(len(ingredients)):
+        if len(ingredients[i]['name']) > long:
+
+            long = len(ingredients[i]['name']) + 1
+    print("+" + "-" * (long + 1) + "+" + "-" * 15 + "+" + "-" * 10 + "+")
+    print("| Ingredient" + " " * (long - 10) + "|" + " Needs cooling" + " |" + " In stock " + "|")
+    print("+" + "-" * (long  + 1) + "+" + "-" * 15 + "+" + "-" * 10 + "+")
+
+    for j in range(len(ingredients)):
+
+        ingredient = ingredients[j]['name']
+        needscool = str(ingredients[j]['needs_cooling'])
+        instock = str(ingredients[j]['in_stock'])
+
+        ingred = ingredient + " " * (long - len(ingredient))
+        needsc = " " + needscool + " " * (14 - len(needscool))
+
+        if instock == "0":
+            instock = "-"
+
+        instoc = " " + instock + " " * (9 - len(instock))
+        print("| " + ingred + "|" + needsc + "|" + instoc + "|")
+    print("+" + "-" * (long + 1) + "+" + "-" * 15 + "+" + "-" * 10 + "+")
+
+table_printer()

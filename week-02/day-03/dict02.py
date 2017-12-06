@@ -23,5 +23,4 @@ def ave_candy():
     for i in students:
         candy += i["candies"]
     print(candy / len(students))
-
 ave_candy()

@@ -13,7 +13,7 @@ def slowreverse(text):
     for i in text:
         s = i + s
     print (s)
-slowreverse (".eslaf eb t'ndluow ecnetnes siht ,dehctiws erew eslaf dna eurt fo sgninaem eht fI")
+slowreverse(".eslaf eb t'ndluow ecnetnes siht ,dehctiws erew eslaf dna eurt fo sgninaem eht fI")
 
 #Solution 3
 reversed = ".eslaf eb t'ndluow ecnetnes siht ,dehctiws erew eslaf dna eurt fo sgninaem eht fI"
@@ -21,4 +21,3 @@ def reverse(x):
     a = x[::-1]
     print(a)
 reverse(reversed)
-

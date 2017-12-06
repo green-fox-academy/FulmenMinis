@@ -11,6 +11,7 @@ students = [
         {'name': 'Olaf', 'age': 12, 'candies': 7},
         {'name': 'Gerzson', 'age': 10, 'candies': 1}
 ]
+
 #Solution 1
 def candy_owned():
     candy = 0
@@ -26,6 +27,7 @@ def sum_age():
             age += i["age"]
     print(age)
 sum_age()
+
 #Solution 2
 def candy_owned():
     candy = 0
