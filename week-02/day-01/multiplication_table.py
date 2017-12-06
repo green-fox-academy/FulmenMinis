@@ -13,6 +13,7 @@
 # 8 * 15 = 120
 # 9 * 15 = 135
 # 10 * 15 = 150
+
 num = int(input ('Type in a number! '))
 for i in range(1, 11):
    print(i,'*',num,'=',num*i)

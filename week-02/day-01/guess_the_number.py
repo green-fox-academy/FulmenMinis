@@ -5,8 +5,9 @@
 # The stored number is higher
 # The stried number is lower
 # You found the number: 8
+
 number = 23
-guess=0
+guess = 0
 while number != guess:
     guess = int(input ('What is your guess? '))
     if number > guess:

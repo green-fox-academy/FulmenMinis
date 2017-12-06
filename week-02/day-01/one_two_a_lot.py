@@ -3,12 +3,12 @@
 # If the number is one it should print: One
 # If the number is two it should print: Two
 # If the number is more than two it should print: A lot
-x = int(input ('Type in a number! '))
+x = int(input('Type in a number! '))
 if x < 1:
-    print ('Not enough')
+    print('Not enough')
 if x == 1:
-    print ('One')
+    print('One')
 if x == 2:
-    print ('Two')
+    print('Two')
 if x > 2:
-    print ('A lot')
+    print('A lot')

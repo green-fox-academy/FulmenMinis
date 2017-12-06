@@ -11,10 +11,10 @@
 # 3
 # 4
 # 5
-x = int(input ('Type in a number! '))
-y = int(input ('Type in another number! '))
+x = int(input('Type in a number! '))
+y = int(input('Type in another number! '))
 if x >= y:
     print("The second number should be bigger")
 else:
-    for z in range (x,y):
+    for z in range(x,y):
         print(z)
