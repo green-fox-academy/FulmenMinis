@@ -7,5 +7,3 @@ canvas.pack()
 
 # reproduce this:
 # [https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/line-play/r1.png]
-
-root.mainloop()
