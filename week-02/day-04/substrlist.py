@@ -13,4 +13,3 @@ def find_words(text, word):
     return -1
 
 print(find_words(["this", "is", "what", "I'm", "searching", "in"], "ching"))
-

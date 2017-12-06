@@ -5,6 +5,7 @@
 # Example
 # input [34, 12, 24, 9, 5]
 # output [5, 9, 12, 24, 34]
+
 list_of_numbers = [34, 12, 24, 9, 5]
 asc = False
 
