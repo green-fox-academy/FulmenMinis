@@ -4,5 +4,5 @@
 # - Greet `al`
 al = 'Greenfox'
 def greet(al):
-	print("Greetings, dear " + name)
+	print("Greetings, dear " + al)
 greet("Greenfox")

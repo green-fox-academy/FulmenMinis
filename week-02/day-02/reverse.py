@@ -2,10 +2,13 @@
 #   with the following content: `[3, 4, 5, 6, 7]`
 # - Reverse the order of the elements in `aj`
 # - Print the elements of the reversed `aj`
+
+#Solution1
 aj = [3, 4, 5, 6, 7]
-aj[0],aj[1],aj[2],aj[3],aj[4] = aj[4],aj[3],aj[2],aj[1],aj[0]
+aj[0], aj[1], aj[2], aj[3], aj[4] = aj[4], aj[3], aj[2], aj[1], aj[0]
 print(aj)
-#solution2
+
+#Solution2
 aj = [3, 4, 5, 6, 7]
 aj = aj[::-1]
 print(aj)
