@@ -9,6 +9,7 @@ canvas.pack()
 # the x and y coordinates of the line's starting point
 # and draws a line from that point to the center of the canvas.
 # fill the canvas with lines from the edges, every 20 px, to the center.
+
 #Solution 1
 
 def draw_line(x, y):
@@ -23,12 +24,12 @@ for i in range(0, 301, 20):
 root.mainloop()
 
 #Unfinished Solution 2
-'''def drawing_function(x,y):
-    canvas.create_line(int(x), int(y), 150, 150)
-if x >= 20 and y==0
-if x <= 281 and y==0
-if y >= 20 and x==0
-if y <= 281 and x==0'''
+#def drawing_function(x,y):
+#    canvas.create_line(int(x), int(y), 150, 150)
+#if x >= 20 and y==0
+#if x <= 281 and y==0
+#if y >= 20 and x==0
+#if y <= 281 and x==0'''
 
 def drawing(x, y):
     for i in range(15):
@@ -44,5 +45,6 @@ def drawing(x, y):
         y -= 20
         canvas.create_line(150, 150, x, y)
 
+drawing(298, 298)
 drawing(2, 2)
 root.mainloop()
