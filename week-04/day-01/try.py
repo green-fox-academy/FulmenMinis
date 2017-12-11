@@ -19,7 +19,7 @@ print("Brand of car2: " + car2.brand + ", Model: " + car2.model + ", Color: " + 
 # mert kb üres lenne: def __init__(self): pass
 # nem jó def így, ehelyett:
 def __init__(self, brand, model, color): 
-    self.brand =brandself.model=model
+    self.brand = brand.self.model=model
     self.color=color
 
 car1 = car("Nissan", "Sunny", "green")

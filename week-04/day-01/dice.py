@@ -26,14 +26,16 @@ class Dice(object):
 dice = Dice()
 print(dice.get_current())
 dice.roll()
-print(dice.get_current())
-while i in range (len(dice.get_current)):
-    if dice.get_current(i) == 6:
-        print(dice.get_current(i))
-    else:
-        dice.reroll(i)
 
-'''dice.reroll(3)
-print(dice.get_current(3)) #ez a 3. helyen lévő értéket hívja meg'''
+for items in range(len(dice.get_current())):
+    while dice.get_current(items) != 6:
+        dice.reroll(items)
 print(dice.get_current())
+
+'''print(dice.get_current())
+dice.roll()
+print(dice.get_current())
+dice.reroll(3)
+print(dice.get_current(3)) #ez a 3. helyen lévő értéket hívja meg
+print(dice.get_current())'''
 
