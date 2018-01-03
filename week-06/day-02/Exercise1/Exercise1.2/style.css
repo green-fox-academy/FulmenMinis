@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 300px;
+  }
+
+.green {
+    background-color: green;
+    flex-grow: 1;
+
+  }
+.yellow {
+    background-color: yellow;
+    flex-grow: 2;
+  }   
+.purple {
+    background-color: purple;
+    flex-grow: 1;
+
+  }
+
+.item {
+    align-self: center;
+    height: 190px;
+  }

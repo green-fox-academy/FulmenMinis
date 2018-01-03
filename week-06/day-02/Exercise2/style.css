@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.yellow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    background-color: yellow;
+    height: 280px;
+    width: 750px;
+  }   
+.purple {
+    background-color: purple;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+    align-self: center;
+  }
+
+/* .item {
+    align-self: center;
+  } */
