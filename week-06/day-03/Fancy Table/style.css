@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    padding: 30px;
+    background-color: blue;
+}
+table {
+    border-collapse: collapse;
+    width: 800px;
+    height: 500px;
+    background-color: lightgrey;
+  }
+
+th {
+    background-color: black;
+    font-size: 25px;
+    font-weight: normal;
+    color: lightgrey;
+}
+
+td, th {
+    border: 1px solid grey;
+    padding: 1rem;
+    text-align: left;
+  }
+td {
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+
+}
+
+tr:nth-child(2n) > td {
+    background-color: white;
+  }
