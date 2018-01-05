@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    background-color: blueviolet;
+    padding: 10px;
+    margin: 25px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-gap: 10px;
+}
+.item {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 200px;
+    height: 200px;
+    overflow: auto;
+}
+.yellow {
+    background-color: yellow
+}
+.green {
+    background-color: rgb(38, 206, 38)
+}
