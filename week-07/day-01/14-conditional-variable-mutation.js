@@ -9,8 +9,6 @@ if (a % 2 === 0) {
 console.log(out);
 
 
-
-
 var b = 13;
 var out2 = '';
 // if b is between 10 and 20 set out2 to "Sweet!"
@@ -26,7 +24,6 @@ else if (b > 20) {
     out2 = 'More!';
 }
 console.log(out2);
-
 
 
 var c = 123;
@@ -49,8 +46,6 @@ else if (isBonus === true) { //(isBonus) same as isBonus === true
 console.log(c);
 
 
-
-
 var d = 8;
 var time = 120;
 var out3 = '';
@@ -67,5 +62,4 @@ if (d % 4 === 0 && time <= 200) {
 } else {
     out3 = 'Run Forest Run!';
 }
-
 console.log(out3);
