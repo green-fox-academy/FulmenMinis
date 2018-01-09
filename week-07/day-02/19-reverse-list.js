@@ -15,9 +15,9 @@ console.log(aj);
 // Solution 2
 var aj = [3, 4, 5, 6, 7];
 
-var buffer = [];
+var tempList = [];
 for( var i = 0; i < aj.length;i++) {
-  buffer[i] = aj[aj.length - i - 1];
+  tempList[i] = aj[aj.length - i - 1];
 }
-aj = buffer;
+aj = tempList;
 console.log(aj);

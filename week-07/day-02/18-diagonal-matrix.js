@@ -18,3 +18,16 @@ let size = 4;
 for (let j = 0; j < size; j++) {
    console.log('0 '.repeat(size - j - 1) + '1 ' + '0 '.repeat(j))
 }
+
+// Solution 2
+let size = 4;
+
+let matrix = [[]];
+for(let i = 0; i < size; i++){
+    let temp = '';
+    matrix[i] = [0];
+    for(let j = 0; j < size; j++){
+        temp += i + j === size - 1 ? matrix[i][j] = [1] + ' ' : matrix[i][j] = [0] + ' ';
+    }
+    console.log(temp);
+}

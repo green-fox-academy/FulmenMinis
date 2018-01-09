@@ -5,4 +5,13 @@
 
 // Also, log the sentence to the console with spaces in between.
 
+// Solution 1
 var words = ["What", "I", "do", "create,", "I", "cannot", "not", "understand."];
+[words[2], words[5]] = [words[5], words[2]];
+console.log(...words)
+
+// Solution 2
+var words = ["What", "I", "do", "create,", "I", "cannot", "not", "understand."];
+words[2] = [words[5],words[5]=words[2]][0];
+words = words.join("" + " ");  
+console.log(words);
