@@ -34,7 +34,7 @@ function numChecker(numbers) {
     for (let i = 0; i < listOfNumbers.length; i++) {
         for (let j = 0; i <= list2.length; i++) {
             if (listOfNumbers[i] === list2[j]) {
-                return true;} else {return false;}
+                return true;} else {return false;} //returns with the first value & doesn't continue
         }
     }
 }
