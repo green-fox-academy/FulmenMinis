@@ -21,3 +21,12 @@
 var args = process.argv.splice(2); // Just a helper for you to get started
 
 console.log('Input params are', args);
+
+if(args.length !== 3 || ['+', '-', '*', '/', '%'].indexOf(args[0]) === -1){
+  console.log('Wrong arguments. Fromat must be: ');
+  console.log('node calculator.js {operator} {operand} {operand}');
+  console.log('operator must be in quotation mark: "+", "-", "*", "//", "%"');
+} else {
+  let expression = args[1] + ' ' + args[0] + ' ' + args[2];
+  console.log(expression + ' = ' + eval(expression));
+}
