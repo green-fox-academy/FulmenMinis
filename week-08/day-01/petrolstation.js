@@ -29,7 +29,6 @@ var station = {
   petrolStorage: 3000,
   provide: function (car) {
     let usedPetrol = car.refill(this.petrolStorage);
-    // car.refill(this.petrolStorage);
     this.petrolStorage -= usedPetrol; // new val doesnt need this.!
   }
 };
