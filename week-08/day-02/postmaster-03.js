@@ -1,3 +1,4 @@
+'use strict';
 // Write the logic of the postMaster function. It shoud have two parameters: 
 //  - poBox: a string that identifies the sender
 //  - dispatchFunction: a function that will be called with the message
@@ -8,7 +9,6 @@
 // If the poBox matches the targetBox only that case call the dispatchFunction
 
 function postMaster(poBox, dispatchFunction) {
-  // var poBox = poBox
   return function (targetBox, message) {
     if (poBox === targetBox) {
       dispatchFunction(message);

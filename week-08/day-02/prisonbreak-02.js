@@ -1,3 +1,4 @@
+'use strict';
 function prison(person) {
   var person = person;
   let fugitive = 1;

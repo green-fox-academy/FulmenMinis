@@ -1,0 +1,32 @@
+<!-- 
+// Delayed Click
+
+// Create a simple HTML document with one button. 
+// If the user clicks the button it should wait 2 seconds 
+// and it should show a text under the button: 2 seconds ellapsed -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Delayed click</title>
+    <style>
+      button {
+        color: rgb(0, 153, 255);
+      }
+    </style>
+  </head>
+  <body>
+    <button>Click</button>
+    <script>
+      var button = document.querySelector('button');
+      button.addEventListener('click', function() {
+      setTimeout(function() {
+        var body = document.querySelector('body');
+        var par = document.createElement('p');
+        par.textContent = '2 seconds ellapsed';
+        body.appendChild(par);
+      }, 2000);
+      })
+    </script>
+  </body>
+</html>
