@@ -27,10 +27,12 @@ If the user starts clicking before the first 5 seconds, nothing should be printe
         let clicks = 0;
         let child = document.createElement('div');
         child.textContent = '5 seconds ellapsed and clicked 3 times';
-        return function() {
-          clicks++
-          if (Date.now() - siteLoadedAt > 5000 && clicks >= 3) {
-            document.querySelector('body').appendChild(child)
+        return function() {         
+          if (Date.now() - siteLoadedAt > 5000) {
+            clicks++; 
+            if (clicks >= 3) {
+              document.querySelector('body').appendChild(child)
+            }
           }
         }
       }
