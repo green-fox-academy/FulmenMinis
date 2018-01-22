@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    background-color: white;
+    grid-gap: 5px;
+    width: 880px;
+    height: 10vh;
+    grid-template-areas: 
+    "header header header header header header header header header header header header header header"
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". upleft upleft upleft upleft upleft upleft upright upright upright upright upright upright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". downleft downleft downleft downleft downleft downleft downmid downmid downmid downright downright downright ."
+    ". footer footer footer footer footer footer footer footer footer footer footer footer ."
+    ". . . . . . . . . . . . . . ."
+}
+.purple {
+    background-color: blueviolet;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 20px;
+    grid-gap: 15px;
+    align-content: center;
+    padding: 10px;
+}
+.cyan {
+    background-color: cyan;
+}
+.green {
+    background-color: rgb(38, 206, 38);
+}
+.upleft {
+    grid-area: upleft;
+    background-color: rgb(38, 206, 38);
+
+}
+.upright {
+    grid-area: upright;
+    background-color: rgb(38, 206, 38);
+
+}
+.downleft {
+    grid-area: downleft;
+    background-color: rgb(38, 206, 38);
+
+}
+.downmid {
+    grid-area: downmid;
+    background-color: rgb(38, 206, 38);
+
+}
+.downright {
+    grid-area: downright;
+    background-color: rgb(38, 206, 38);
+
+}
+.grey {
+    background-color: rgb(158, 158, 158);
+    grid-area: footer;
+}
