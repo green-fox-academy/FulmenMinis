@@ -35,3 +35,15 @@ if (lineCount % 2 === 0) {
       console.log(' '.repeat(lineCountHalf - i + 1) + '*'.repeat(i) + '*'.repeat(i-1));
     }
 }
+
+//Solution by Kinga
+let lineCount = 7;
+let x = Math.floor(lineCount / 2);
+
+for (let i = 0; i < x + 1; i++) {
+    console.log(' '.repeat(x - i) + '*'.repeat(2 * i + 1) + ' '.repeat(x - i));
+}
+
+for (let i = x - 1; i >= 0; i--) {
+    console.log(' '.repeat(x - i) + '*'.repeat(2 * i + 1) + ' '.repeat(x - i));
+}

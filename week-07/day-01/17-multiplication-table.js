@@ -1,4 +1,3 @@
-
 'use strict';
 
 var number = 15;
@@ -19,6 +18,6 @@ var number = 15;
 // 8 * 15 = 120
 // 9 * 15 = 135
 // 10 * 15 = 150
-for (var i = 1; i < 11; i += 1) {
-    console.log(i + ' * 15 = ' + i * 15);
+for (var i = 1; i < 11; i ++) {
+    console.log(i + ' * ' + number + ' = ' + i * number);
 }
