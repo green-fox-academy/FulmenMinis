@@ -1,4 +1,3 @@
-
 'use strict';
 // Create a simple calculator application which does read the parameters from the standard input 
 // and prints the result to the console.
@@ -18,6 +17,7 @@
 // Else print the result
 // Say goodbye
 
+//Solution 1
 var args = process.argv.splice(2); // Just a helper for you to get started
 
 console.log('Input params are', args);
@@ -30,3 +30,42 @@ if(args.length !== 3 || ['+', '-', '*', '/', '%'].indexOf(args[0]) === -1){
   let expression = args[1] + ' ' + args[0] + ' ' + args[2];
   console.log(expression + ' = ' + eval(expression));
 }
+
+// Solution 2
+var args = process.argv.splice(2); // Just a helper for you to get started
+
+let operator = args[0];
+let op_1 = Number(args[1]);
+let op_2 = Number(args[2]);
+let result;
+
+switch(operator) {
+  case "+":
+    result = op_1 + op_2;
+  break;
+  case "-":
+    result = op_1 - op_2;
+    break;
+  case "*":
+    result = op_1 * op_2;
+    break;
+  case "/":
+    if (op_2 != 0) {
+      result = op_1 / op_2;
+    } else {
+      result = "Division by zero is not permitted!";
+    }
+    break;
+  case "%":
+    if (op_2 != 0) {
+      result = op_1 % op_2;
+    } else {
+      result = "Division by zero is not permitted!";
+    }
+    break;
+  default:
+    result = "No operator added";
+}
+
+
+console.log('The result is:',result);

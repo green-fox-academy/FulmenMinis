@@ -4,7 +4,6 @@
 // // Create a 'numChecker' function that accepts 'listOfNumbers' as an input
 // // it should return "true" if it contains all, otherwise "false"
 
-
 // Solution 1
 let listOfNumbers = [2, 4, 6, 8, 10, 12, 14, 16]
 function numChecker(numbers) {
@@ -27,7 +26,22 @@ function numChecker(listOfNumbers) {
 }
 console.log(numChecker(listOfNumbers));
 
-// Solution 3 -not working
+// Solution 3 
+var listOfNumbers = [2, 4, 6, 8, 10, 12, 14, 16];
+var testList = [4, 8, 12, 16];
+var contains = true;
+
+function numChecker(testList) {
+  testList.forEach(function(number) {
+    if (!listOfNumbers.includes(number)) {
+      contains = false
+    }
+  });
+  return contains;
+}
+console.log(numChecker(testList));
+
+// Solution 4 -not working
 var listOfNumbers = [2, 4, 6, 8, 10, 12, 14, 16]
 var list2 = [4, 8, 12, 16]
 function numChecker(numbers) {

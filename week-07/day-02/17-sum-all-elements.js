@@ -4,13 +4,14 @@
 // - Log the sum of the elements in `ai` to the console
 
 // Solution 1
-var ai = [3, 4, 5, 6, 7]
+var ai = [3, 4, 5, 6, 7];
 var sum = ai.reduce((a, b) => a + b, 0);
 console.log(sum);
 
 // // Solution 2
-// var ai = [3, 4, 5, 6, 7]
-// for (let num=0; num in ai; num++) {
-//     let total += num;
-// }
-// // console.log( )
+var ai = [3, 4, 5, 6, 7];
+let total = 0;
+for (let num = 0; num in ai; num++) {
+  total += ai[num];
+}
+console.log(total)

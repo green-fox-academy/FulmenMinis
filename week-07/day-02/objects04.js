@@ -24,19 +24,18 @@ var queue = [
 // If alcohol is found confiscate it (set it to zero and add it to security_alchol_loot) and let them enter the festival
 function securityChecker(queue) {
 	for (let i = 0; i < queue.length; i++) {
-			if (queue[i].guns > 0) {
-					queue[i].guns = 0;
-					watchlist.push(' ' + queue[i].name);
-			}
-			if (queue[i].alcohol > 0) {
-					security_alchol_loot += queue[i].alcohol;
-					queue[i].alcohol = 0;
-			}
-			letThemEnter.push(' ' + queue[i].name);
+		if (queue[i].guns > 0) {
+			queue[i].guns = 0;
+			watchlist.push(' ' + queue[i].name);
+		}
+		if (queue[i].alcohol > 0) {
+			security_alchol_loot += queue[i].alcohol;
+			queue[i].alcohol = 0;
+		}
+		letThemEnter.push(' ' + queue[i].name);
 	}
 	console.log('People who carried guns:' + watchlist);
 	console.log(`Security alcohol loot: ${security_alchol_loot}`);
 	console.log('People who can enter:' + letThemEnter);
-
 }
 securityChecker(queue);

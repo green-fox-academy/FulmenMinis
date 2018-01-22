@@ -17,17 +17,14 @@ var hashmap = {
     3: "say goodbye "
 };
 
+// Solution 1
 out = notSoCrypticMessage.map(item => out + hashmap[item]).join('');
 
+console.log(out);
+
+// Solution 2
+notSoCrypticMessage.forEach(function(item) {
+    out += hashmap[item];
+})
+  
 console.log(out)
-
-// for (let i = 0; i <= notSoCrypticMessage.length; i++) {
-//     out += hashmap[notSoCrypticMessage[i]];
-// }
-
-// console.log(out)
-// out = notSoCrypticMessage.map(function(e) {
-//     return hashmap[e];
-// }).join('');
-
-// console.log(out);
