@@ -2,9 +2,10 @@
 
 var test = require('tape');
 var Sharpie = require('./sharpie.js');
-const blackSharpie = new Sharpie('black', 10);
+
 
 test('sharpie', function(t) {
+  const blackSharpie = new Sharpie('black', 10);
   let actual = blackSharpie.inkAmount;
   let expected = 100;
 
@@ -13,6 +14,7 @@ test('sharpie', function(t) {
 });
 
 test('use sharpie', function(t) {
+  const blackSharpie = new Sharpie('black', 10);
   blackSharpie.use();
   let actual = blackSharpie.inkAmount;
   let expected = 0;

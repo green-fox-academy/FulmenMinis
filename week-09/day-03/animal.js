@@ -10,3 +10,19 @@
 
 //     Create tests that covers all types of input (like in the previous workshop exercise)
 'use strict';
+function Animal(name) {
+  this.name = name;
+  this.hunger = 50;
+  this.thirst = 50;
+  this.eat = function() {
+    this.hunger--;
+  }
+  this.drink = function() {
+    this.thirst--;
+  }
+  this.play = function() {
+    this.hunger++;
+    this.thirst++;
+  }
+}
+module.exports = Animal;
