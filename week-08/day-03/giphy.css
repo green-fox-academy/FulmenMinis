@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  background: rgb(104, 147, 226);
+}
+.mainimage {
+  width: 720px;
+  height: 500px;
+  border: 2px dotted rgb(25, 0, 255);
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.thumbnails img {
+  cursor: pointer;
+}

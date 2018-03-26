@@ -1,0 +1,24 @@
+{
+  "name": "fulmenminis",
+  "version": "1.0.0",
+  "description": "\"(https://github.com/FulmenMinis/hello-world) \"Hello World\"\" \r \"(https://github.com/FulmenMinis/patchwork) \"Feladat\"\" \r \"(https://github.com/FulmenMinis/git-lesson-repository) \"git-lesson-repository\"\" \r \"(https://github.com/greenfox-academy/FulmenMinis) \"FulmenMinis\"\" \r \"[Badcat-Syllabus](https://github.com/greenfox-academy/badcat-syllabus) \"Badcat Syllabus\"\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greenfox-academy/FulmenMinis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/greenfox-academy/FulmenMinis/issues"
+  },
+  "homepage": "https://github.com/greenfox-academy/FulmenMinis#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mysql": "^2.15.0"
+  }
+}

@@ -1,0 +1,98 @@
+<!-- 6. commit html fel -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <h1>Title/Head</h1>
+  <!-- ha valamit ki kell íratni-->
+  <div class="message"></div>
+  <!-- DROPDOWN LIST JSből-->
+  <section class="dropdown">
+    <select class="item">
+      <option value="default">Select item name</option>
+    </select>
+    <select class="size">
+      <option value="default">Select size</option>
+    </select>
+  </section>
+  <!-- DROPDOWN LIST HTMLből-->
+  <form method="GET" action="/">
+    <select name="clothes">
+      <option value="" disabled selected>Select item name</option>
+      <option value="jumper">Green Fox Jumper</option> 
+      <option value="polo">Green Fox Short-Sleeved Mesh Polo Shirt</option>
+      <option value="sweater">Half-Ip Ribbed Mock-Turtleneck Sweater</option>
+      <option value="skirt">Strecth Steamed Pencil Skirt</option>
+      <option value="dress">Two-Tone Sleeveless Sheath Dress</option>
+      <option value="cardigan">Wool/Alpaca Shawl Collar Cardigan</option>
+    </select>
+  </form>
+
+  <!-- BUTTON -->
+  <section class="button">
+    <button>GET TOTAL</button>
+  </section>
+  <button type="submit">get total</button>
+  <!-- simple button w p text  -->
+  <form> 
+    <input type="button" value="Start machine">
+  </form>
+  <p>The machine is stopped.</p>
+  <!-- RADIO BUTTON -egyszerre csak egy jelölhető be! -->
+  <form>
+    <p>Please select your preferred contact method:</p>
+    <div>
+      <input type="radio" id="contactChoice1"
+       name="contact" value="email">
+      <label for="contactChoice1">Email</label>
+  
+      <input type="radio" id="contactChoice2"
+       name="contact" value="phone">
+      <label for="contactChoice2">Phone</label>
+  
+      <input type="radio" id="contactChoice3"
+       name="contact" value="mail">
+      <label for="contactChoice3">Mail</label>
+    </div>
+    <div>
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+  <!-- CHECK BOX -egyszerre több is bejelölhető! -->
+  <fieldset>
+    <legend>Choose your interests</legend>
+    <div>
+      <input type="checkbox" id="coding" name="interest" value="coding">
+      <label for="coding">Coding</label>
+    </div>
+    <div>
+      <input type="checkbox" id="music" name="interest" value="music">
+      <label for="music">Music</label>
+    </div>
+  </fieldset>
+  <!-- INPUT MEZŐ -->
+  <section>
+    <input type="text" id="inputField">
+  </section>
+  <input type="text" id="quantity" name="quantity" />
+
+  <!-- INPUT MEZŐ MELLETTE SZÖVEGGEL -->
+  <label for="licence-plate-input">Please type a licence name</label>
+  <input id="licence-plate-input" type="text" maxlength="7" name="licence-plate-pattern" />
+  <!-- CHECKBOX -->
+
+  <!-- TÁBLÁZAT -->
+  <section class="container">
+      <table></table>
+  </section>
+
+  <script src="frontend.js"></script>
+  
+</body>
+</html>

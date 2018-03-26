@@ -30,3 +30,14 @@ app.listen(3000, function(){
   console.log('the app is running');
 })
 
+
+// // 3 féleképpen juthatunk infóhoz
+// app.get('/post/:id', (req,res) => {
+// // localhost/posts/1?alma&korte=0
+// req.query.alma // (alma:1, körte: 0)
+// // localhost/posts/3/4/5
+// req.params.id
+// // kell hozzá a bodyparser
+// req.body. 
+// res.sendfile(__dirname + '/index.html')
+// })

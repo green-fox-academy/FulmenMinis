@@ -15,11 +15,16 @@ Animal.prototype.say = function () {
 const Slash = new Animal('wuff');
 Slash.say();
 
+// Tojás version
 
+function Animal(talk) {
+  function say() {
+    console.log(talk);
+  }
+  return {
+    say: say
+  }
+}
 
-// function Animal(talk) {
-//   function say() {
-//     console.log(talk);
-//   }
-// }
-
+const dog = Animal('vau')
+dog.say();

@@ -108,7 +108,80 @@ app.post('/arrays', function(request, response) {
   }
 });
 
+// const translate = function (hungarian) {
+//   if( typeof hungarian != "string") {
+//     return 'Invalid value';
+//   }
+//   if (hungarian == '') {
+//     return '';
+//   } else if ("aeiouéáőűöüóí".includes(hungarian[0]) || "AEIOUÉÁŐŰÖÜÓÍ".includes(hungarian[0])) {
+//     if ("AEIOUÉÁŐŰÖÜÓÍ".includes(hungarian[0])) {
+//       return hungarian[0] + "v" + hungarian[0].toLocaleLowerCase() + translate(hungarian.substring(1));
+//     }
+//     return hungarian[0] + "v" + hungarian[0] + translate(hungarian.substring(1));
+//   }
+//   return hungarian[0] + translate(hungarian.substring(1));
+// };
+
+// app.post('/translate', urlencoded, function (req, res) {
+//   if(req.body.text != undefined && req.body.lang != undefined) {
+//     let translatedText = "";
+//     translatedText = translate(req.body.text);
+//     res.json({ 
+//       translated: translatedText,
+//       lang: "teve" });
+//   } else if(req.body.text == undefined && req.body.lang != undefined) {
+//     res.json({ 
+//       error: "There is nothing to translate!"
+//        });
+//   } else {
+//     res.json({ 
+//       error: "I can't translate that!"
+//        });
+//   }
+// });
+
+// app.post('/sith', urlencoded, function (req, res) {
+//   if(req.body.text != undefined) {
+//     let translatedText = "";
+//     translatedText = sithTranslator(req.body.text);
+//     res.json({ 
+//       sith_text: translatedText,
+//     });
+//   } else if(req.body.text == undefined) {
+//     res.json({ 
+//       error: "Feed me some text you have to, padawan young you are. Hmmm."
+//        });
+//   }
+// });
+
+// function sithTranslator (text) {
+//   text = text.split('.');
+//   let result = "";
+//   for(let x = 0; x < text.length; x++) {
+//     let newtext = [];
+//     let smalltext = "";
+//     newtext = text[x].split(" ");
+//     for (let i = 0; i < newtext.length; i += 2) {
+//       if (newtext[i + 1] !== undefined) {
+//         newtext[i] = [newtext[i+1], newtext[i+1] = newtext[i] ][0];
+//       }
+//     }
+//     if(newtext[1] !== undefined && newtext[1][0] !== undefined) {
+//       smalltext = newtext[1][0].toLowerCase() + newtext[1].substring(1);
+//       newtext[1] = smalltext;
+//       smalltext = newtext[0][0].toUpperCase() + newtext[0].substring(1);
+//       newtext[0] = smalltext;
+//     }
+//     newtext.splice(newtext.indexOf(""), 1);
+//     newtext = newtext.join(" ") + ".";
+//     if (newtext !== ".") {
+//       result += newtext + " ";
+//     }
+//   }
+//   return result;
+// }
+
 
 app.listen(8080); //port választás
 console.log('listening to port');
-

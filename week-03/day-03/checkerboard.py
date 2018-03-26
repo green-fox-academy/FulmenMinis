@@ -18,7 +18,7 @@ for i in range(cols):
         squareList.append(canvas.create_rectangle(i*size, j*size, i*size+size, j*size+size, fill=colors[i%2]))
 root.mainloop()
 
-#some GUI drawing basics from the internet:
+'''#some GUI drawing basics from the internet:
 
 from tkinter import *
 
@@ -38,3 +38,4 @@ thecanvas.grid(row=0,column=0)
 window.update_idletasks()
 checkerboard(thecanvas)
 window.mainloop()
+'''
